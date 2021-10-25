@@ -1,1 +1,22 @@
-<p>ToDo: Formulário Cliente Pessoa Jurídica</p>
+@model eCommerce.Models.Table.Cliente
+
+<div class="form-group">
+    <input type="hidden" asp-for="IdPessoaNavigation.IdPessoa" />
+    <label class="control-label" asp-for="IdPessoaNavigation.Nome"> </label>
+    <input asp-for="IdPessoaNavigation.Nome" class="form-control" />
+    <span asp-validation-for="IdPessoaNavigation.Nome" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label class="control-label" asp-for="IdPessoaNavigation.Email"> </label>
+    <input asp-for="IdPessoaNavigation.Email" class="form-control" />
+    <span asp-validation-for="IdPessoaNavigation.Email" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <input type="hidden" asp-for="IdPessoaNavigation.CpfCnpj" />
+    <label class="control-label" asp-for="IdPessoaNavigation.CpfCnpj"> </label>
+    <input type="text" id="Cnpj" name="Cnpj" class="form-control" />
+    <label class="control-label" asp-for="IdPessoaNavigation.PessoaJuridica.NomeFantasia"> </label>
+    <input type="text" id="NomeFantasia" name="NomeFantasia" class="form-control" />
+    <label class="control-label" asp-for="IdPessoaNavigation.PessoaJuridica.InscricaoEstadual"> </label>
+    <input type="text" id="InscricaoEstadual" name="InscricaoEstadual" class="form-control" />
+</div>
