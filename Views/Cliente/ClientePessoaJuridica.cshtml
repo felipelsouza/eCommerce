@@ -14,9 +14,16 @@
 <div class="form-group">
     <input type="hidden" asp-for="IdPessoaNavigation.CpfCnpj" />
     <label class="control-label" asp-for="IdPessoaNavigation.CpfCnpj"> </label>
-    <input type="text" id="Cnpj" name="Cnpj" class="form-control" />
-    <label class="control-label" asp-for="IdPessoaNavigation.PessoaJuridica.NomeFantasia"> </label>
-    <input type="text" id="NomeFantasia" name="NomeFantasia" class="form-control" />
-    <label class="control-label" asp-for="IdPessoaNavigation.PessoaJuridica.InscricaoEstadual"> </label>
-    <input type="text" id="InscricaoEstadual" name="InscricaoEstadual" class="form-control" />
+    <input type="text" id="Cpf" name="Cpf" class="form-control" />
 </div>
+<div class="form-group">
+    <input type="hidden" asp-for="IdPessoaNavigation.PessoaJuridica.IdPessoa" />
+    <label class="control-label" asp-for="IdPessoaNavigation.PessoaJuridica.InscricaoEstadual"> </label>
+    <input asp-for="IdPessoaNavigation.PessoaJuridica.InscricaoEstadual" class="form-control" />
+    <span asp-validation-for="IdPessoaNavigation.PessoaJuridica.InscricaoEstadual" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label class="control-label" asp-for="IdPessoaNavigation.PessoaJuridica.NomeFantasia"> </label>
+    <input asp-for="IdPessoaNavigation.PessoaJuridica.NomeFantasia" class="form-control" />
+    <span asp-validation-for="IdPessoaNavigation.PessoaJuridica.NomeFantasia" class="text-danger"></span>
+</div> 
