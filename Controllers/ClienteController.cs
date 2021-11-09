@@ -10,6 +10,7 @@ using eCommerce.Models.Table;
 
 namespace eCommerce.Controllers
 {
+    [Authorize]
     public class ClienteController : Controller
     {
         private readonly eCommerceContext _context;
